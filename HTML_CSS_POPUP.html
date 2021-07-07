@@ -19,7 +19,7 @@
     }
 
     #CB_modal {
-      background: #00000080;
+      background: #ffffff20;
       position: fixed;
       left: 0px;
       top: 0px;
@@ -33,9 +33,9 @@
       font-size: 16px;
       font-family: Arial, sans-serif;
       line-height: normal;
-      text-align: center;
+      text-align: left;
       font-weight: normal;
-      color: #fff;
+      color: #333;
     }
 
     #CB_popup {
@@ -44,9 +44,9 @@
       min-height: auto;
       position: relative;
       z-index: 2147483647;
-      background-color: #333;
+      background-color: #fff;
       border-radius: 0.4em;
-      box-shadow: 0px 0px 80px #FFFFFF;
+      box-shadow: 0px 0px 80px #84bbff40;
       padding: calc(8px + 4%);
     }
 
@@ -56,8 +56,8 @@
       top: 0.2em;
       right: 0.2em;
       border: 0;
-      color: #333;
-      background: #eee;
+      color: #fff;
+      background: #ccc;
       border-radius: 100%;
       height: 1.2em;
       width: 1.2em;
@@ -67,7 +67,7 @@
 
     /* Link style and functions */
     #CB_popup a {
-      color: #fff;
+      color: #333;
       cursor: pointer;
       text-decoration: none;
     }
@@ -93,9 +93,9 @@
     /* CTA style and functions */
     #CB_CTA {
       border: 0;
-      border-radius: 0.2em;
-      background: #eee;
-      color: #333;
+      border-radius: 2em;
+      background: #4091f7;
+      color: #fff;
       font-size: 1.2em;
       white-space: nowrap;
       text-decoration: none;
@@ -109,8 +109,8 @@
     }
 
     #CB_CTA:hover {
-      background: #fff;
-      box-shadow: 0px 0px 10px #FFFFFF;
+      background: #0073ff;
+      box-shadow: 0px 0px 10px #84bbff;
     }
 
     #CB_CTA:focus {
@@ -118,7 +118,7 @@
     }
 
     #CB_CTA:active {
-      background-color: #ddd;
+      background-color: #4091f7;
     }
 
     /* Responsive rules */
@@ -148,12 +148,11 @@
         onclick="document.getElementById('CB_modal').style.display='none';">
 
         <h1>
-          Here is the Title
+          Tittle
         </h1>
 
         <h3>
-          Here is the <b>main wording</b><br />
-          with the all the information.
+          Here is the <b>main wording</b> with the all the information.
         </h3>
 
         <button autofocus id="CB_CTA">
@@ -163,8 +162,7 @@
       </a>
 
       <p>
-        And finally a quick disclaimer
-        <br>for the TnC.
+        And finally a quick disclaimer for the TnC.
       </p>
 
 
