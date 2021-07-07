@@ -5,21 +5,48 @@
 <head>
 
   <!--
-    No JS Popup
-    Designed by Cyrille Besson
-    210706
+    ! Design and Development by Cyrille Besson
+    ! update : 2021.07.07
+
+    * Responsive
+    * colors in variables
+    * auto-closing function
+    * hover CTA
+
+? illustration
+? special font
+
+    TODO automated dark mode function
     -->
+
+  <!-- 
+    * comment
+    ! important comment
+    ? question
+    TODO list
+    // old comment
+  -->
+
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
   <style type="text/css">
     * {
       margin: 0;
       padding: 0;
     }
 
+    :root {
+      --color-text: #04151F;
+      --color-cta: #4091f7;
+      --color-hover: #0073ff;
+      --color-shade: #dcecff;
+    }
+
     #CB_modal {
-      background: #ffffff20;
+      background: #ffffff80;
       position: fixed;
       left: 0px;
       top: 0px;
@@ -35,7 +62,7 @@
       line-height: normal;
       text-align: left;
       font-weight: normal;
-      color: #333;
+      color: var(--color-text);
     }
 
     #CB_popup {
@@ -46,7 +73,7 @@
       z-index: 2147483647;
       background-color: #fff;
       border-radius: 0.4em;
-      box-shadow: 0px 0px 80px #84bbff40;
+      box-shadow: 0px 0px 80px var(--color-shade);
       padding: calc(8px + 4%);
     }
 
@@ -67,7 +94,7 @@
 
     /* Link style and functions */
     #CB_popup a {
-      color: #333;
+      color: var(--color-text);
       cursor: pointer;
       text-decoration: none;
     }
@@ -94,7 +121,7 @@
     #CB_CTA {
       border: 0;
       border-radius: 2em;
-      background: #4091f7;
+      background: var(--color-cta);
       color: #fff;
       font-size: 1.2em;
       white-space: nowrap;
@@ -109,8 +136,8 @@
     }
 
     #CB_CTA:hover {
-      background: #0073ff;
-      box-shadow: 0px 0px 10px #84bbff;
+      background: var(--color-hover);
+      box-shadow: 0px 0px 10px var(--color-cta);
     }
 
     #CB_CTA:focus {
@@ -118,7 +145,7 @@
     }
 
     #CB_CTA:active {
-      background-color: #4091f7;
+      background: var(--color-cta);
     }
 
     /* Responsive rules */
@@ -130,7 +157,7 @@
       }
     }
   </style>
-  <title>test</title>
+  <title>HTML/CSS open-source popup</title>
 </head>
 
 <body>
@@ -143,16 +170,16 @@
         &times;
       </button>
 
-
-      <a href="%c%u&q=%pq=!;%pb=!;%pdata=!;" target="_blank"
+      <!-- ! Link with closing function -->
+      <a href="https://github.com/cyrillebesson/HTML_CSS_popup" target="_blank"
         onclick="document.getElementById('CB_modal').style.display='none';">
 
         <h1>
-          Tittle
+          Title
         </h1>
 
         <h3>
-          Here is the <b>main wording</b> with the all the information.
+          Here is a fully responsive <b>open-source popup</b> made of HTML and CSS with auto-closing function
         </h3>
 
         <button autofocus id="CB_CTA">
@@ -162,7 +189,7 @@
       </a>
 
       <p>
-        And finally a quick disclaimer for the TnC.
+        Feel free to improve and share it.
       </p>
 
 
